@@ -1,0 +1,42 @@
+.dashboard-widget-hiolle_veeam_backup .dashboard-widget-content,
+.dashboard-widget-hiolle_veeam_backup { background: #292929; overflow: hidden; }
+.hiolle-veeam {
+    min-height: 100%;
+    padding: 7px;
+    background: #292929;
+    color: #edf4fa;
+    font-size: 9px;
+    overflow: hidden;
+}
+.hiolle-veeam-summary { display: flex; align-items: center; gap: 9px; padding: 2px 4px 8px; }
+.hiolle-veeam-title { margin-right: auto; color: #f3f7fa; font-weight: 700; letter-spacing: .04em; }
+.hiolle-veeam-summary-item { font-size: 8px; font-weight: 700; }
+.hiolle-veeam-summary-ok { color: #46cf80; }
+.hiolle-veeam-summary-warning { color: #ffb742; }
+.hiolle-veeam-summary-critical { color: #ff5264; }
+.hiolle-veeam-head, .hiolle-veeam-job { display: grid; grid-template-columns: minmax(150px, 1.45fr) minmax(120px, 1fr) minmax(75px, .7fr) 70px; gap: 10px; align-items: center; }
+.hiolle-veeam-head { padding: 4px 8px; color: #8fa3b2; border-bottom: 1px solid #46515a; font-size: 7px; font-weight: 700; letter-spacing: .04em; }
+.hiolle-veeam-hypervisor { display: flex; align-items: center; gap: 7px; padding: 7px 8px 4px; color: #66b9ee; border-bottom: 1px solid #34434d; font-size: 8px; font-weight: 700; letter-spacing: .04em; }
+.hiolle-veeam-hypervisor-label { color: #8fa3b2; font-size: 7px; }
+.hiolle-veeam-hypervisor-name { text-transform: uppercase; }
+.hiolle-veeam-job { position: relative; min-height: 43px; padding: 7px 8px 23px; border-bottom: 1px solid #3c444a; }
+.hiolle-veeam-job-critical { padding-bottom: 7px; }
+.hiolle-veeam-job-unknown { --hiolle-veeam-color: #9ba9b3; }
+.hiolle-veeam-message { padding: 8px; color: #c6ced5; }
+.hiolle-veeam-job::before { display: none; }
+.hiolle-veeam-job-ok { --hiolle-veeam-color: #46cf80; }
+.hiolle-veeam-job-warning { --hiolle-veeam-color: #ffb742; }
+.hiolle-veeam-job-critical { --hiolle-veeam-color: #ff5264; border: 1px solid rgba(255, 82, 100, .45); border-radius: 4px; background: rgba(255, 82, 100, .13); }
+.hiolle-veeam-job-warning { border: 1px solid rgba(255, 183, 66, .28); border-radius: 4px; background: rgba(255, 183, 66, .08); }
+.hiolle-veeam-job-running { --hiolle-veeam-color: #54b7ee; border: 1px solid rgba(84, 183, 238, .3); border-radius: 4px; background: rgba(84, 183, 238, .08); }
+.hiolle-veeam-job-main, .hiolle-veeam-job-last { min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.hiolle-veeam-job-name { overflow: hidden; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+.hiolle-veeam-job-repo, .hiolle-veeam-label { color: #8fa3b2; font-size: 8px; }
+.hiolle-veeam-value { white-space: nowrap; }
+.hiolle-veeam-job-stats { display: flex; flex-direction: column; gap: 3px; color: #d4e0e8; }
+.hiolle-veeam-stat { white-space: nowrap; }
+.hiolle-veeam-job-state { display: flex; align-items: center; gap: 4px; color: var(--hiolle-veeam-color); font-weight: 700; }
+.hiolle-veeam-state-dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; box-shadow: 0 0 8px currentColor; }
+.hiolle-veeam-progress-track { position: absolute; left: 8px; right: 8px; bottom: 3px; height: 13px; overflow: hidden; border-radius: 3px; background: #3b454c; }
+.hiolle-veeam-progress { width: var(--hiolle-veeam-progress); height: 100%; background: var(--hiolle-veeam-color); }
+.hiolle-veeam-progress-label { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 8px; font-weight: 700; text-shadow: 0 1px 2px #000; }
