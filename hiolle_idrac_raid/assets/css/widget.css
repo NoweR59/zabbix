@@ -1,0 +1,28 @@
+.dashboard-widget-hiolle_idrac_raid .dashboard-widget-content,
+.dashboard-widget-hiolle_idrac_raid { background: #292929; }
+.hiolle-raid { min-height: 100%; padding: 7px; background: #292929; color: #edf4fa; font-size: 9px; }
+.hiolle-raid-summary { display: flex; align-items: center; gap: 10px; padding: 2px 4px 8px; }
+.hiolle-raid-title { margin-right: auto; color: #f3f7fa; font-weight: 700; letter-spacing: .05em; }
+.hiolle-raid-summary-ok, .hiolle-raid-summary-warning, .hiolle-raid-summary-critical { font-size: 8px; font-weight: 700; }
+.hiolle-raid-summary-ok { color: #46cf80; }.hiolle-raid-summary-warning { color: #ffb742; }.hiolle-raid-summary-critical { color: #ff5264; }
+.hiolle-raid-head, .hiolle-raid-card { display: grid; grid-template-columns: minmax(150px, 1.35fr) minmax(120px, 1fr) minmax(100px, .9fr) minmax(110px, .8fr) 115px; gap: 9px; align-items: center; }
+.hiolle-raid-head { padding: 4px 8px; border-bottom: 1px solid #46515a; color: #8fa3b2; font-size: 7px; font-weight: 700; letter-spacing: .04em; }
+.hiolle-raid-card { position: relative; min-height: 72px; padding: 7px 8px 6px; border-bottom: 1px solid #3c444a; }
+.hiolle-raid-card::before { display: none; }
+.hiolle-raid-ok { --hiolle-raid-color: #46cf80; }.hiolle-raid-warning { --hiolle-raid-color: #ffb742; }.hiolle-raid-critical { --hiolle-raid-color: #ff5264; }
+.hiolle-raid-server { display: flex; align-items: center; gap: 7px; min-width: 0; }.hiolle-raid-brand { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 22px; border-radius: 50%; color: #fff; font-size: 7px; font-weight: 900; letter-spacing: -.04em; text-shadow: 0 1px 1px #0008; }.hiolle-raid-brand-dell { border: 1px solid #71c5ef; background: radial-gradient(circle at 35% 30%, #54b7ee, #07517f 75%); }.hiolle-raid-brand-hp { border: 1px solid #93d6f8; border-radius: 4px; background: linear-gradient(145deg, #2395d0, #07517f); font-size: 8px; letter-spacing: -.08em; }.hiolle-raid-server-text { min-width: 0; }.hiolle-raid-server-name { overflow: hidden; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }.hiolle-raid-idrac, .hiolle-raid-caption { color: #8fa3b2; font-size: 8px; }
+.hiolle-raid-volume, .hiolle-raid-stats, .hiolle-raid-health { display: flex; flex-direction: column; gap: 3px; min-width: 0; }.hiolle-raid-volume-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }.hiolle-raid-level { align-self: flex-start; padding: 2px 5px; border-radius: 8px; background: #263e4c; color: #78c9f6; font-size: 8px; font-weight: 700; }
+.hiolle-raid-disk-panel { grid-column: 1 / -1; display: flex; align-items: center; gap: 8px; min-width: 0; padding: 5px 0 1px; border-top: 1px solid #34444d; }
+.hiolle-raid-disk-panel-title { flex: 0 0 43px; color: #8fa3b2; font-size: 7px; font-weight: 800; letter-spacing: .04em; }
+.hiolle-raid-disk-list { display: flex; flex-wrap: wrap; gap: 4px; min-width: 0; }
+.hiolle-raid-disk { display: inline-flex; align-items: center; gap: 4px; padding: 3px 6px; border: 1px solid rgba(70, 207, 128, .28); border-radius: 4px; background: rgba(70, 207, 128, .12); color: #c8f5d9; font-size: 8px; white-space: nowrap; }
+.hiolle-raid-disk-failed { border-color: rgba(255, 82, 100, .34); background: rgba(255, 82, 100, .14); color: #ffb7bf; }.hiolle-raid-disk-predictive { border-color: rgba(255, 183, 66, .34); background: rgba(255, 183, 66, .14); color: #ffd58a; }
+.hiolle-raid-disk-failed { border-color: #ff5264; }.hiolle-raid-disk-predictive { border-color: #ffb742; }
+.hiolle-raid-disk-dot { display: none; }
+.hiolle-raid-disk-slot { font-weight: 800; }.hiolle-raid-disk-model { color: inherit; opacity: .85; }
+.hiolle-raid-health { color: var(--hiolle-raid-color); font-weight: 700; }.hiolle-raid-health-dot { width: 7px; height: 7px; margin-bottom: -1px; border-radius: 50%; background: currentColor; box-shadow: 0 0 8px currentColor; }.hiolle-raid-disks { color: #d4e0e8; font-size: 8px; font-weight: 400; }.hiolle-raid-stat { color: #d4e0e8; white-space: nowrap; }.hiolle-raid-space-head { display: flex; justify-content: space-between; color: #8fa3b2; font-size: 7px; }.hiolle-raid-space-value { color: #edf4fa; font-size: 9px; font-weight: 700; }.hiolle-raid-space-track { height: 4px; margin-top: 5px; overflow: hidden; border-radius: 3px; background: #3b454c; }.hiolle-raid-space-bar { width: var(--hiolle-raid-used); height: 100%; background: var(--hiolle-raid-color); }
+.hiolle-raid .hiolle-raid-card { grid-template-columns: minmax(120px, .75fr) minmax(0, 2fr); min-height: 56px; }
+.hiolle-raid .hiolle-raid-disk { flex-direction: column; align-items: flex-start; white-space: normal; overflow-wrap: anywhere; padding: 6px 9px; border: 0; }
+.hiolle-raid .hiolle-raid-disk-unknown { background: rgba(160,170,180,.12); color: #b7c0c8; }
+.hiolle-raid .hiolle-raid-empty { padding: 12px; color: #b7c0c8; }
+@media (max-width: 600px) { .hiolle-raid .hiolle-raid-card { grid-template-columns: minmax(0, 1fr); } }
