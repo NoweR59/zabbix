@@ -37,7 +37,7 @@ foreach ($data['rows'] as $row) {
             $tag('hiolle-raid-server-name', $row['server']),
             $tag('hiolle-raid-server-caption', [
                 $tag('hiolle-raid-server-dot', ''),
-                'STORCLI · C0 · '.$healthy.'/'.$total.' EN LIGNE'
+                ($row['source'] ?? 'SNMP').' · '.$healthy.'/'.$total.' DISQUES OK'
             ])
         ]),
         $tag('hiolle-raid-disk-list', $disks ?: 'Collecte indisponible : configurez SNMP ou l’élément texte hiolle.raid.storcli sur cet hôte.')
