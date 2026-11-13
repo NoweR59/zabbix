@@ -15,7 +15,7 @@ foreach ($data['rows'] as $row) {
             $tag('hiolle-raid-brand hiolle-raid-brand-'.$row['brand'], ['hp'=>'HPE','dell'=>'DELL','unknown'=>'?'][$row['brand']]),
             $tag('hiolle-raid-server-name', $row['server'])
         ]),
-        $tag('hiolle-raid-disk-list', $disks ?: 'Aucun disque découvert : configurez le modèle SNMP Dell iDRAC ou HP iLO sur cet hôte.')
+        $tag('hiolle-raid-disk-list', $disks ?: 'Collecte indisponible : configurez SNMP ou l’élément texte hiolle.raid.storcli sur cet hôte.')
     ]);
 }
 (new CWidgetView($data))->addItem($tag('hiolle-raid', $rows ?: [
