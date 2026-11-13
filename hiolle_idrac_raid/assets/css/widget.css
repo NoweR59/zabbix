@@ -1,6 +1,12 @@
 .dashboard-widget-hiolle_idrac_raid .dashboard-widget-content,
 .dashboard-widget-hiolle_idrac_raid { background: #292929; }
 .dashboard-widget-hiolle_idrac_raid .dashboard-widget-content { overflow: hidden; }
+.dashboard-widget-hiolle_idrac_raid,
+.dashboard-widget-hiolle_idrac_raid .dashboard-widget-content,
+.dashboard-widget-hiolle_idrac_raid .dashboard-widget-content > div { scrollbar-width: none; -ms-overflow-style: none; overflow-x: hidden !important; overflow-y: hidden !important; }
+.dashboard-widget-hiolle_idrac_raid::-webkit-scrollbar,
+.dashboard-widget-hiolle_idrac_raid .dashboard-widget-content::-webkit-scrollbar,
+.dashboard-widget-hiolle_idrac_raid .dashboard-widget-content > div::-webkit-scrollbar { width: 0; height: 0; display: none; }
 .hiolle-raid { min-height: 100%; padding: 7px; background: #292929; color: #edf4fa; font-size: 9px; }
 .hiolle-raid { overflow: hidden; }
 .hiolle-raid-summary { display: flex; align-items: center; gap: 10px; padding: 2px 4px 8px; }
