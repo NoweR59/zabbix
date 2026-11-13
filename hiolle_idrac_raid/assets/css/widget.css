@@ -26,3 +26,24 @@
 .hiolle-raid .hiolle-raid-disk-unknown { background: rgba(160,170,180,.12); color: #b7c0c8; }
 .hiolle-raid .hiolle-raid-empty { padding: 12px; color: #b7c0c8; }
 @media (max-width: 600px) { .hiolle-raid .hiolle-raid-card { grid-template-columns: minmax(0, 1fr); } }
+.hiolle-raid .hiolle-raid-card { display: block; min-height: 0; padding: 8px 10px 10px; border-bottom: 1px solid #3c444a; }
+.hiolle-raid .hiolle-raid-card { margin: 0 0 6px; border: 1px solid #3b464d; border-radius: 7px; background: linear-gradient(135deg, rgba(255,255,255,.035), rgba(255,255,255,.012)); box-shadow: inset 0 1px 0 rgba(255,255,255,.035); }
+.hiolle-raid .hiolle-raid-card-ok { --hiolle-raid-color: #46cf80; }
+.hiolle-raid .hiolle-raid-card-warning { --hiolle-raid-color: #ffb742; }
+.hiolle-raid .hiolle-raid-card-critical { --hiolle-raid-color: #ff5264; }
+.hiolle-raid .hiolle-raid-server { display: flex; align-items: center; gap: 7px; min-height: 25px; padding-bottom: 7px; }
+.hiolle-raid .hiolle-raid-server-name { color: #edf4fa; font-size: 10px; font-weight: 700; }
+.hiolle-raid .hiolle-raid-server-caption { display: inline-flex; align-items: center; gap: 4px; margin-left: auto; padding: 3px 6px; border: 1px solid rgba(70,207,128,.22); border-radius: 10px; background: rgba(70,207,128,.08); color: #a5c8b2; font-size: 7px; font-weight: 800; letter-spacing: .06em; white-space: nowrap; }
+.hiolle-raid .hiolle-raid-server-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--hiolle-raid-color, #46cf80); box-shadow: 0 0 7px var(--hiolle-raid-color, #46cf80); }
+.hiolle-raid .hiolle-raid-disk-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: 5px; padding-top: 7px; border-top: 1px solid #34444d; }
+.hiolle-raid .hiolle-raid-disk { min-height: 42px; justify-content: center; gap: 3px; padding: 6px 8px; border: 1px solid rgba(70,207,128,.22); border-radius: 5px; background: rgba(70,207,128,.11); }
+.hiolle-raid .hiolle-raid-disk-slot { color: #dffbe9; font-size: 9px; font-weight: 800; }
+.hiolle-raid .hiolle-raid-disk-model { overflow: hidden; max-width: 100%; color: #b9d2c0; font-size: 8px; text-overflow: ellipsis; white-space: nowrap; }
+.hiolle-raid .hiolle-raid-disk-temperature { color: #f0f7f2; font-size: 10px; font-weight: 800; letter-spacing: .02em; }
+.hiolle-raid .hiolle-raid-disk-meta { overflow: hidden; max-width: 100%; color: #d5e2da; font-size: 8px; text-overflow: ellipsis; white-space: nowrap; }
+.hiolle-raid .hiolle-raid-disk-health { overflow: hidden; max-width: 100%; color: #a9c5b4; font-size: 6.5px; text-overflow: ellipsis; white-space: nowrap; }
+.hiolle-raid .hiolle-raid-disk-serial { overflow: hidden; max-width: 100%; color: #91ae9d; font-size: 7px; text-overflow: ellipsis; white-space: nowrap; }
+.hiolle-raid .hiolle-raid-disk-failed { border-color: rgba(255,82,100,.35); background: rgba(255,82,100,.13); }
+.hiolle-raid .hiolle-raid-disk-predictive { border-color: rgba(255,183,66,.35); background: rgba(255,183,66,.13); }
+.hiolle-raid .hiolle-raid-disk-failed .hiolle-raid-disk-temperature { color: #ffb7bf; }
+.hiolle-raid .hiolle-raid-disk-predictive .hiolle-raid-disk-temperature { color: #ffd58a; }
