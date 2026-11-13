@@ -1,6 +1,8 @@
 .dashboard-widget-hiolle_idrac_raid .dashboard-widget-content,
 .dashboard-widget-hiolle_idrac_raid { background: #292929; }
+.dashboard-widget-hiolle_idrac_raid .dashboard-widget-content { overflow: hidden; }
 .hiolle-raid { min-height: 100%; padding: 7px; background: #292929; color: #edf4fa; font-size: 9px; }
+.hiolle-raid { overflow: hidden; }
 .hiolle-raid-summary { display: flex; align-items: center; gap: 10px; padding: 2px 4px 8px; }
 .hiolle-raid-title { margin-right: auto; color: #f3f7fa; font-weight: 700; letter-spacing: .05em; }
 .hiolle-raid-summary-ok, .hiolle-raid-summary-warning, .hiolle-raid-summary-critical { font-size: 8px; font-weight: 700; }
