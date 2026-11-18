@@ -28,8 +28,8 @@ class WidgetView extends CControllerDashboardWidgetView {
                 'itemids' => [$item['itemid']], 'sortfield' => 'clock',
                 'sortorder' => 'DESC', 'limit' => 1
             ]);
-            if ($item['state'] != 0 || !$history || (int) $history[0]['clock'] < time() - 900) {
-                $messages[] = $host.' : collecte absente, non supportée ou ancienne (>15 min).';
+            if ($item['state'] != 0 || !$history) {
+                $messages[] = $host.' : collecte absente ou non supportée.';
                 continue;
             }
             $payload = json_decode($history[0]['value'], true);
