@@ -65,5 +65,5 @@ $content = $tag('div', 'hiolle-veeam', [
 ]);
 
 (new CWidgetView($data))
-    ->addItem($content)
+    ->addItem($content->setAttribute('style', '--hiolle-veeam-font-size:'.max(8, min(30, (int) ($data['font_size'] ?? 9))).'px'))
     ->show();

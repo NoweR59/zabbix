@@ -5,7 +5,7 @@
     padding: 7px;
     background: #292929;
     color: #edf4fa;
-    font-size: 9px;
+    font-size: var(--hiolle-veeam-font-size, 9px);
     overflow: hidden;
 }
 .hiolle-veeam-summary { display: flex; align-items: center; gap: 9px; padding: 2px 4px 8px; }
@@ -40,3 +40,20 @@
 .hiolle-veeam-progress-track { position: absolute; left: 8px; right: 8px; bottom: 3px; height: 13px; overflow: hidden; border-radius: 3px; background: #3b454c; }
 .hiolle-veeam-progress { width: var(--hiolle-veeam-progress); height: 100%; background: var(--hiolle-veeam-color); }
 .hiolle-veeam-progress-label { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 8px; font-weight: 700; text-shadow: 0 1px 2px #000; }
+
+/* Tailles proportionnelles au réglage propre à chaque instance du widget. */
+.hiolle-veeam-summary-item,
+.hiolle-veeam-hypervisor,
+.hiolle-veeam-job-repo,
+.hiolle-veeam-label,
+.hiolle-veeam-progress-label { font-size: .888889em; }
+.hiolle-veeam-head { font-size: .777778em; }
+.hiolle-veeam-hypervisor-label { font-size: .875em; }
+.hiolle-veeam-head, .hiolle-veeam-job {
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr) minmax(0, .7fr) minmax(4.5em, .65fr);
+}
+.hiolle-veeam-job { padding-bottom: max(23px, 2em); }
+.hiolle-veeam-job-critical { padding-bottom: 7px; }
+.hiolle-veeam-progress-track { height: max(13px, 1.45em); }
+.hiolle-veeam-value, .hiolle-veeam-stat { white-space: normal; overflow-wrap: anywhere; }
+.hiolle-veeam-job-state { min-width: 0; overflow-wrap: anywhere; }

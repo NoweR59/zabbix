@@ -74,6 +74,7 @@ class WidgetView extends CControllerDashboardWidgetView {
         $this->setResponse(new CControllerResponseData([
             'name' => $this->getInput('name', $this->widget->getName()),
             'jobs' => $jobs, 'messages' => array_unique($messages),
+            'font_size' => max(8, min(30, (int) ($this->fields_values['font_size'] ?? 9))),
             'user' => ['debug_mode' => $this->getDebugMode()]
         ]));
     }
